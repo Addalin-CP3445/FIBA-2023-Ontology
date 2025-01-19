@@ -1,0 +1,1229 @@
+@prefix : <http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/> .
+
+<http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Belongs_To
+:Belongs_To rdf:type owl:ObjectProperty ;
+            rdfs:domain :License_Plate ;
+            rdfs:range :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/ShortForm
+:ShortForm rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/hasDomain
+:hasDomain rdf:type owl:ObjectProperty ;
+           rdfs:domain :Country_Names .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/BELONGS_TO
+:BELONGS_TO rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/ISO_3166-1
+:ISO_3166-1 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/hasAlpha_2
+:hasAlpha_2 rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :ISO_3166-1 ;
+            rdfs:domain :Country_Names ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/hasAlpha_3
+:hasAlpha_3 rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :ISO_3166-1 ;
+            rdfs:domain :Country_Names ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/hasCountry_Name
+:hasCountry_Name rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/hasDomain
+:hasDomain rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/hasFips_10
+:hasFips_10 rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Country_Names ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/hasIOC
+:hasIOC rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Country_Names ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/hasLicence_Plate
+:hasLicence_Plate rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Country_Names ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/hasNumeric
+:hasNumeric rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :ISO_3166-1 ;
+            rdfs:domain :Country_Names ;
+            rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Afghanistan
+:Afghanistan rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Albania
+:Albania rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Algeria
+:Algeria rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/American_Samoa
+:American_Samoa rdf:type owl:Class ;
+                rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Andorra
+:Andorra rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Angola
+:Angola rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Antigua_and_Barbuda
+:Antigua_and_Barbuda rdf:type owl:Class ;
+                     rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Argentina
+:Argentina rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Armenia
+:Armenia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Aruba
+:Aruba rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Australia
+:Australia rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Austria
+:Austria rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Azerbaijan
+:Azerbaijan rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Bahamas
+:Bahamas rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Bahrain
+:Bahrain rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Bangladesh
+:Bangladesh rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Barbados
+:Barbados rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Belarus
+:Belarus rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Belgium
+:Belgium rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Belize
+:Belize rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Benin
+:Benin rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Bhutan
+:Bhutan rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Bolivia
+:Bolivia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Bosnia_and_Herzegovina
+:Bosnia_and_Herzegovina rdf:type owl:Class ;
+                        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Botswana
+:Botswana rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Brazil
+:Brazil rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names ,
+                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasAlpha_2 ;
+                                                 owl:hasValue "BR"
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasAlpha_3 ;
+                                                 owl:hasValue "BRA"
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasNumeric ;
+                                                 owl:hasValue 76
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasDomain ;
+                          owl:hasValue ".br"
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasFips_10 ;
+                          owl:hasValue "BR"
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasLicence_Plate ;
+                          owl:hasValue "BR"
+                        ] .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/British_Virgin_Islands
+:British_Virgin_Islands rdf:type owl:Class ;
+                        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Brunei
+:Brunei rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Bulgaria
+:Bulgaria rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Burkina_Faso
+:Burkina_Faso rdf:type owl:Class ;
+              rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Burundi
+:Burundi rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Cambodia
+:Cambodia rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Cameroon
+:Cameroon rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Canada
+:Canada rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Cape_Verde
+:Cape_Verde rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Central_African_Republic
+:Central_African_Republic rdf:type owl:Class ;
+                          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Chad
+:Chad rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Chile
+:Chile rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/China
+:China rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Colombia
+:Colombia rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Comoros
+:Comoros rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Costa_Rica
+:Costa_Rica rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :ISO_3166-1 ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasDomain ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasFips_10 ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasIOC ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Country_Names
+:Country_Names rdf:type owl:Class ;
+               rdfs:subClassOf :Country ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasLicence_Plate ;
+                                 owl:someValuesFrom xsd:string
+                               ] .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Croatia
+:Croatia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Cuba
+:Cuba rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Cyprus
+:Cyprus rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Czechia
+:Czechia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Democratic_Republic_of_the_Congo
+:Democratic_Republic_of_the_Congo rdf:type owl:Class ;
+                                  rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Denmark
+:Denmark rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Djibouti
+:Djibouti rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Domain
+:Domain rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :Belongs_To ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Country_Names
+                        ] .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Dominica
+:Dominica rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Dominican_Republic
+:Dominican_Republic rdf:type owl:Class ;
+                    rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/East_Timor
+:East_Timor rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Ecuador
+:Ecuador rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Egypt
+:Egypt rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/El_Salvador
+:El_Salvador rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Equatorial_Guinea
+:Equatorial_Guinea rdf:type owl:Class ;
+                   rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Eritrea
+:Eritrea rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Estonia
+:Estonia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Eswatini
+:Eswatini rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Ethiopia
+:Ethiopia rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Faroe_Islands
+:Faroe_Islands rdf:type owl:Class ;
+               rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Federated_States_of_Micronesia
+:Federated_States_of_Micronesia rdf:type owl:Class ;
+                                rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Fiji
+:Fiji rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Finland
+:Finland rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Fips_10
+:Fips_10 rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :Belongs_To ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Country_Names
+                         ] .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/France
+:France rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Gabon
+:Gabon rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Gambia
+:Gambia rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Georgia
+:Georgia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Germany
+:Germany rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Ghana
+:Ghana rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Gibraltar
+:Gibraltar rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Greece
+:Greece rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Greenland
+:Greenland rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Grenada
+:Grenada rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Guatemala
+:Guatemala rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Guinea
+:Guinea rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Guinea-Bissau
+:Guinea-Bissau rdf:type owl:Class ;
+               rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Guyana
+:Guyana rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Haiti
+:Haiti rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Honduras
+:Honduras rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Hong_Kong
+:Hong_Kong rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Hungary
+:Hungary rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/IOC
+:IOC rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :Belongs_To ;
+                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass :Country_Names
+                     ] .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/ISO
+:ISO rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :Belongs_To ;
+                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass :Country_Names
+                     ] .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/ISO_3166_1_alpha2
+:ISO_3166_1_alpha2 rdf:type owl:Class ;
+                   rdfs:subClassOf :ISO .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/ISO_3166_1_alpha3
+:ISO_3166_1_alpha3 rdf:type owl:Class ;
+                   rdfs:subClassOf :ISO .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/ISO_3166_1_numeric
+:ISO_3166_1_numeric rdf:type owl:Class ;
+                    rdfs:subClassOf :ISO .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Iceland
+:Iceland rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/India
+:India rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Indonesia
+:Indonesia rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Iran
+:Iran rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Iraq
+:Iraq rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Ireland
+:Ireland rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Israel
+:Israel rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Italy
+:Italy rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Ivory_Coast
+:Ivory_Coast rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Jamaica
+:Jamaica rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Japan
+:Japan rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Jordan
+:Jordan rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Kazakhstan
+:Kazakhstan rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Kenya
+:Kenya rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Kiribati
+:Kiribati rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Kosovo
+:Kosovo rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Kuwait
+:Kuwait rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Kyrgyzstan
+:Kyrgyzstan rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Laos
+:Laos rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Latvia
+:Latvia rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Lebanon
+:Lebanon rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Lesotho
+:Lesotho rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Liberia
+:Liberia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Libya
+:Libya rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/License_Plate
+:License_Plate rdf:type owl:Class ;
+               rdfs:subClassOf :Country ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :Belongs_To ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Country_Names
+                               ] .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Liechtenstein
+:Liechtenstein rdf:type owl:Class ;
+               rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Lithuania
+:Lithuania rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Luxembourg
+:Luxembourg rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Madagascar
+:Madagascar rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Malawi
+:Malawi rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Malaysia
+:Malaysia rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Maldives
+:Maldives rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Mali
+:Mali rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Malta
+:Malta rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Marshall_Islands
+:Marshall_Islands rdf:type owl:Class ;
+                  rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Mauritania
+:Mauritania rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Mauritius
+:Mauritius rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Mexico
+:Mexico rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Moldova
+:Moldova rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Mongolia
+:Mongolia rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Montenegro
+:Montenegro rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Morocco
+:Morocco rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Mozambique
+:Mozambique rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Myanmar
+:Myanmar rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Namibia
+:Namibia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Nauru
+:Nauru rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Nepal
+:Nepal rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Netherlands
+:Netherlands rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/New_Zealand
+:New_Zealand rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Nicaragua
+:Nicaragua rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Niger
+:Niger rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Nigeria
+:Nigeria rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/North_Korea
+:North_Korea rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/North_Macedonia
+:North_Macedonia rdf:type owl:Class ;
+                 rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Norway
+:Norway rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Oman
+:Oman rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Pakistan
+:Pakistan rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Palau
+:Palau rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Palestine
+:Palestine rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Panama
+:Panama rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Papua_New_Guinea
+:Papua_New_Guinea rdf:type owl:Class ;
+                  rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Paraguay
+:Paraguay rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Peru
+:Peru rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Philippines
+:Philippines rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Poland
+:Poland rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Portugal
+:Portugal rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Principality_of_Monaco
+:Principality_of_Monaco rdf:type owl:Class ;
+                        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Puerto_Rico
+:Puerto_Rico rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Qatar
+:Qatar rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Republic_of_the_Congo
+:Republic_of_the_Congo rdf:type owl:Class ;
+                       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Romania
+:Romania rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Russia
+:Russia rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Rwanda
+:Rwanda rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Saint_Kitts_and_Nevis
+:Saint_Kitts_and_Nevis rdf:type owl:Class ;
+                       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Saint_Lucia
+:Saint_Lucia rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Saint_Vincent_and_the_Grenadines
+:Saint_Vincent_and_the_Grenadines rdf:type owl:Class ;
+                                  rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Samoa
+:Samoa rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/San_Marino
+:San_Marino rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Sao_Tome_and_Principe
+:Sao_Tome_and_Principe rdf:type owl:Class ;
+                       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Saudi_Arabia
+:Saudi_Arabia rdf:type owl:Class ;
+              rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Senegal
+:Senegal rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Serbia
+:Serbia rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Seychelles
+:Seychelles rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Sierra_Leone
+:Sierra_Leone rdf:type owl:Class ;
+              rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Singapore
+:Singapore rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Slovakia
+:Slovakia rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Slovenia
+:Slovenia rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Solomon_Islands
+:Solomon_Islands rdf:type owl:Class ;
+                 rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Somalia
+:Somalia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/South_Africa
+:South_Africa rdf:type owl:Class ;
+              rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/South_Korea
+:South_Korea rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Spain
+:Spain rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Sri_Lanka
+:Sri_Lanka rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Sudan
+:Sudan rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Suriname
+:Suriname rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Sweden
+:Sweden rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Switzerland
+:Switzerland rdf:type owl:Class ;
+             rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Syria
+:Syria rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Taiwan
+:Taiwan rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Tajikistan
+:Tajikistan rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Tanzania
+:Tanzania rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Thailand
+:Thailand rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Togo
+:Togo rdf:type owl:Class ;
+      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Tonga
+:Tonga rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Trinidad_and_Tobago
+:Trinidad_and_Tobago rdf:type owl:Class ;
+                     rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Tunisia
+:Tunisia rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Turkey
+:Turkey rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Turkmenistan
+:Turkmenistan rdf:type owl:Class ;
+              rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Tuvalu
+:Tuvalu rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Uganda
+:Uganda rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Ukraine
+:Ukraine rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/United_Arab_Emirates
+:United_Arab_Emirates rdf:type owl:Class ;
+                      rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/United_Kingdom
+:United_Kingdom rdf:type owl:Class ;
+                rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/United_States_of_America
+:United_States_of_America rdf:type owl:Class ;
+                          rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Uruguay
+:Uruguay rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Uzbekistan
+:Uzbekistan rdf:type owl:Class ;
+            rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Vanuatu
+:Vanuatu rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Venezuela
+:Venezuela rdf:type owl:Class ;
+           rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Vietnam
+:Vietnam rdf:type owl:Class ;
+         rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Yemen
+:Yemen rdf:type owl:Class ;
+       rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Zambia
+:Zambia rdf:type owl:Class ;
+        rdfs:subClassOf :Country_Names .
+
+
+###  http://www.semanticweb.org/addalin/ontologies/2024/3/untitled-ontology-19/Zimbabwe
+:Zimbabwe rdf:type owl:Class ;
+          rdfs:subClassOf :Country_Names .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
