@@ -1,0 +1,2 @@
+## Development of a FIBA 2023 Ontology Using OWL2 with Data Integration and Rule-Based Reasoning in Protégé
+Created an ontology on FIBA 2023 dataset using OWL2 and designed the T-Box using Protégé and populated the ontology's knowledge base (A-Box) with data from an external semantic data repository using SPARQL 1.1. Integrated and fused data from external dataset containing the countries ISO code names with country details. Used Description Logic (DL) rules to define as many concepts as possible and supplemented with SWRL (Semantic Web Rule Language) rules
